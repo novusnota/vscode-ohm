@@ -3,7 +3,7 @@
 [Ohm language](https://github.com/ohmjs/ohm) support for Visual Studio Code (VSCode). Currently provides syntax highlighting only. Rather strict, enforces each `RuleBody` to be written on one line, starting with `|`. However, this limitation provides for great formatting!
 
 <center>
-  <img src=".github/BANNER.png" alt="Ohm + VSCode"/>
+  <img src=".github/BANNER.jpg" alt="Ohm + VSCode"/>
 </center>
 
 ## Manual installation

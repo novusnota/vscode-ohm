@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# misc.
+/*.md
+!/README.md
+/*.vsix
+/.helix/
+/strict-ohm.tmLanguage.json

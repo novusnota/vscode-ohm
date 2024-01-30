@@ -1,0 +1,6 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+vsc-extension-quickstart.md
+.helix/
+strict-ohm.tmLanguage.json

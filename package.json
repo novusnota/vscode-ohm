@@ -1,0 +1,52 @@
+{
+  "name": "vscode-ohm",
+  "description": "Ohm language support for Visual Studio Code",
+  "version": "0.17.0",
+  "author": "Novus Nota (https://github.com/novusnota)",
+  "license": "MIT",
+  "homepage": "https://github.com/novusnota/vscode-ohm#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/novusnota/vscode-ohm"
+  },
+  "bugs": {
+    "url": "https://github.com/novusnota/vscode-ohm/issues"
+  },
+  "publisher": "novusnota",
+  "displayName": "Ohm Language",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ohm",
+        "aliases": [
+          "Ohm",
+          "ohm"
+        ],
+        "extensions": [
+          ".ohm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ohm",
+        "scopeName": "source.ohm",
+        "path": "./syntaxes/ohm.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.23.0"
+  },
+  "scripts": {
+    "vsce": "vsce"
+  }
+}

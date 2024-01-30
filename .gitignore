@@ -135,3 +135,4 @@ dist
 /*.vsix
 /.helix/
 /strict-ohm.tmLanguage.json
+/.vscode/

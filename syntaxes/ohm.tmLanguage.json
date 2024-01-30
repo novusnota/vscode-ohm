@@ -90,7 +90,7 @@
       "begin": "^\\s*([a-zA-Z_]\\w*)",
       "beginCaptures": {
         "1": {
-          "name": "entity.name.method"
+          "name": "entity.name.function"
         }
       },
       "patterns": [
@@ -176,7 +176,7 @@
       ]
     },
     "builtInRulesLexical": {
-      "name": "support.type",
+      "name": "support.function",
       "match": "\\b(?:any|alnum|end|digit|hexDigit|letter|space|lower|upper|caseInsensitive|listOf|nonemptyListOf|emptyListOf|applySyntactic)\\b"
     },
     "builtInRulesSyntactic": {
@@ -209,8 +209,16 @@
       "match": "<:|=|:=|\\+=|\\*|\\+|\\?|~|&|#|\\.\\.|\\.\\.\\.|\\|"
     },
     "punctuation": {
-      "name": "punctuation.delimiter",
-      "match": "<|>|,"
+      "patterns": [
+        {
+          "name": "punctuation.delimiter",
+          "match": "<|>|,"
+        },
+        {
+          "name": "punctuation.bracket",
+          "match": "(|)"
+        }
+      ]
     },
     "caseName": {
       "match": "(--)\\s*([a-zA-Z_]\\w*)",
